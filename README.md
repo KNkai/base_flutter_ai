@@ -190,10 +190,19 @@ Bạn có thể tạo một dự án mới hoàn chỉnh từ base template này
 
 ### Cách 1: Chạy 1 dòng lệnh duy nhất từ bất kỳ thư mục nào (Khuyên dùng)
 
-Mở PowerShell tại thư mục bạn muốn lưu dự án mới và chạy:
-
+**Trên PowerShell (Windows Terminal):**
 ```powershell
-git clone https://github.com/KNkai/base_flutter_ai.git my_app; cd my_app; .\scripts\bootstrap.ps1 -ProjectName "my_app" -AppTitle "My App Title" -Org "com.mycompany" -ResetGit
+git clone https://github.com/KNkai/base_flutter_ai.git my_app; cd my_app; powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap.ps1 -ProjectName "my_app" -AppTitle "My App Title" -Org "com.mycompany" -ResetGit
+```
+
+**Trên CMD (Command Prompt):**
+```cmd
+git clone https://github.com/KNkai/base_flutter_ai.git my_app && cd my_app && .\scripts\bootstrap.bat -ProjectName "my_app" -AppTitle "My App Title" -Org "com.mycompany" -ResetGit
+```
+
+**Trên Git Bash / macOS / Linux:**
+```bash
+git clone https://github.com/KNkai/base_flutter_ai.git my_app && cd my_app && ./scripts/create_app.sh "my_app" "My App Title" "com.mycompany"
 ```
 
 > **Giải thích tham số:**
